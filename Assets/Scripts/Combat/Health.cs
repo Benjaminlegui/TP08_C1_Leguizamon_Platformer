@@ -55,6 +55,15 @@ public class Health : MonoBehaviour
         Healed?.Invoke();
     }
 
+    public void Kill()
+    {
+        if (IsDead) return;
+
+        currentHealth = 0;
+        Changed?.Invoke();
+        Died?.Invoke();
+    }
+
     public void SetInvulnerable(float duration)
     {
         invulnerableUntil = Mathf.Max(invulnerableUntil, Time.time + duration);
