@@ -5,17 +5,22 @@ public class Character : MonoBehaviour
     [SerializeField] private GroundCheck groundCheck;
     [SerializeField] private CharacterConfigSo config;
 
+    private float damageMultiplier = 1f;
+    private float damageBoostUntil;
+
     public Rigidbody2D Body { get; private set; }
     public Animator Animator { get; private set; }
     public Health Health { get; private set; }
     public Vector2 MoveDirection { get; set; }
     
     public bool AttackRequested { get; set; }
+    public bool HealRequested { get; set; }
     public bool IsGrounded => groundCheck.IsGrounded;
     public float FacingDirection => transform.right.x >= 0f ? 1f : -1f;
 
     public bool FrontGrounded => FacingDirection > 0 ? groundCheck.RightGrounded : groundCheck.LeftGrounded;
     public float Speed => config.Speed;
+    public float DamageMultiplier => Time.time < damageBoostUntil ? damageMultiplier : 1f;
 
     private void Awake()
     {
@@ -28,7 +33,7 @@ public class Character : MonoBehaviour
     {
         if (Health != null)
         {
-            Health.Initialize(config.MaxHealth);
+            Health.Initialize(config.MaxHealth, config.InvulnerabilityAfterHit);
         }    
     }
     
@@ -39,5 +44,11 @@ public class Character : MonoBehaviour
 
         float angleY = direction > 0f ? 0f : 180f;
         transform.rotation = Quaternion.Euler(0f, angleY, 0f);
+    }
+
+    public void ApplyDamageBoost(float multiplier, float duration)
+    {
+        damageMultiplier = multiplier;
+        damageBoostUntil = Time.time + duration;
     }
 }

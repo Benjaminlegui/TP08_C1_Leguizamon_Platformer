@@ -55,7 +55,7 @@ public class AttackState : State
             Health health = collider.GetComponentInParent<Health>();
 
             if (health != null)
-                health.TakeDamage(damage);
+                health.TakeDamage(Mathf.RoundToInt(damage * character.DamageMultiplier));
         }
     }
 
