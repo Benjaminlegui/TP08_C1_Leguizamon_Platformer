@@ -6,6 +6,7 @@ public class UIGameHUD : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] private TMP_Text timeText;
     [SerializeField] private TMP_Text killsText;
+    [SerializeField] private TMP_Text coinsText;
 
     private float elapsedTime;
     private int shownSeconds = -1;
@@ -13,14 +14,17 @@ public class UIGameHUD : MonoBehaviour
 
     private void OnEnable()
     {
-        // Enemy.Died += AddKill;
+        BaseEnemy.Killed += AddKill;
+        CoinWallet.Changed += RefreshCoins;
         RefreshKills();
+        RefreshCoins();
         RefreshTime();
     }
 
     private void OnDisable()
     {
-        // Enemy.Died -= AddKill;
+        BaseEnemy.Killed -= AddKill;
+        CoinWallet.Changed -= RefreshCoins;
     }
 
     private void Update()
@@ -52,5 +56,11 @@ public class UIGameHUD : MonoBehaviour
     private void RefreshKills()
     {
         killsText.text = $"Kills: {kills}";
+    }
+
+    private void RefreshCoins()
+    {
+        if (coinsText != null)
+            coinsText.text = $"Coins: {CoinWallet.Coins}";
     }
 }

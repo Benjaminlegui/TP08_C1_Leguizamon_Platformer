@@ -4,11 +4,11 @@ using UnityEngine.UI;
 public class UIHealthBar : MonoBehaviour
 {
     [SerializeField] private Image fill;
-
-    private Health health;
+    [SerializeField] private Health health;
 
     private void Awake()
     {
+        if (health == null)
         health = GetComponentInParent<Health>();
     }
 
