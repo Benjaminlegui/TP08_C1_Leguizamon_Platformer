@@ -34,6 +34,7 @@ public class Player : Context
         machine.Do();
 
         character.AttackRequested = false;
+        character.HealRequested = false;
     }
 
     private void FixedUpdate()
@@ -73,6 +74,12 @@ public class Player : Context
     {
         if (value.isPressed)
             character.AttackRequested = true;
+    }
+
+    private void OnHeal(InputValue value)
+    {
+        if (value.isPressed)
+            character.HealRequested = true;
     }
 
     private void OnDamaged()

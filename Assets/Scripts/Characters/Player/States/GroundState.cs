@@ -6,6 +6,7 @@ public class GroundState : ParentState
     [SerializeField] private IdleState idleState;
     [FormerlySerializedAs("runState")] [SerializeField] private MoveState moveState;
     [SerializeField] private AttackState attackState;
+    [SerializeField] private HealState healState;
 
     public override void Do()
     {
@@ -21,6 +22,8 @@ public class GroundState : ParentState
     {
         if (character.AttackRequested)
             machine.Set(attackState);
+        else if (character.HealRequested && healState != null && healState.CanHeal)
+            machine.Set(healState);
         else if (moveDirection.x == 0)
             machine.Set(idleState);
         else
