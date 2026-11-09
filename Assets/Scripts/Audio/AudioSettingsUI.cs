@@ -12,6 +12,12 @@ public class AudioSettingsUI : MonoBehaviour
     [SerializeField] private TMP_Text musicPercentageText;
     [SerializeField] private TMP_Text effectsPercentageText;
 
+    private void Awake()
+    {
+        if (audioManager == null)
+            audioManager = FindAnyObjectByType<AudioManager>();
+    }
+
     private void Start()
     {
         masterSlider.SetValueWithoutNotify(audioManager.MasterVolume);
