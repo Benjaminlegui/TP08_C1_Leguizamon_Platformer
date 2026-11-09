@@ -190,6 +190,55 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &3525381981330932411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9132918412551940323}
+  - component: {fileID: 4256073677231136630}
+  m_Layer: 8
+  m_Name: Heal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9132918412551940323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3525381981330932411}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2912446263145020425}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4256073677231136630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3525381981330932411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21407e2aac555364685acf73e3abcedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealState
+  healClip: {fileID: 7400000, guid: 1099121d3fe03354985897404956b167, type: 2}
+  healSpeed: 1
+  healTime: 0.6
+  healAmount: 30
+  maxCharges: 3
 --- !u!1 &3988389845674415822
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +272,7 @@ Transform:
   - {fileID: 5336055231830473228}
   - {fileID: 682671653478299417}
   - {fileID: 5150694396373432567}
+  - {fileID: 9132918412551940323}
   m_Father: {fileID: 3193292845793319998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8454756550294005899
@@ -240,6 +290,7 @@ MonoBehaviour:
   idleState: {fileID: 8713044925793859072}
   moveState: {fileID: 3511462031620642971}
   attackState: {fileID: 4674811616693193140}
+  healState: {fileID: 4256073677231136630}
 --- !u!1 &4507428323066398554
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +345,52 @@ MonoBehaviour:
     m_Bits: 128
   damage: 10
   hitTime: 0.5
+--- !u!1 &4526949760714677403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3187644413840349290}
+  - component: {fileID: 3777213294841699752}
+  m_Layer: 8
+  m_Name: Death
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3187644413840349290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526949760714677403}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3193292845793319998}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3777213294841699752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526949760714677403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a5107eb3890dd408030c5c23644dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathState
+  deathClip: {fileID: 7400000, guid: 15fbd9eef7942d646b8f89a7d40810c1, type: 2}
+  finishDelay: 1
 --- !u!1 &4927141350121796159
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +423,7 @@ Transform:
   - {fileID: 104310435594917557}
   - {fileID: 852148977271018334}
   - {fileID: 2912446263145020425}
+  - {fileID: 3187644413840349290}
   m_Father: {fileID: 7684966935275610362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5874040347379232571
@@ -343,6 +441,7 @@ GameObject:
   - component: {fileID: 3843070981103006585}
   - component: {fileID: 114647606495880190}
   - component: {fileID: 5179336919504947743}
+  - component: {fileID: 2132095346493980137}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -411,6 +510,7 @@ MonoBehaviour:
   airState: {fileID: 8392103723845848632}
   groundState: {fileID: 8454756550294005899}
   hurtState: {fileID: 3676938427181617429}
+  deathState: {fileID: 3777213294841699752}
   airSpeedMultiplier: 0.6
 --- !u!114 &4058663527435378760
 MonoBehaviour:
@@ -485,6 +585,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eeec53902eeb32489ce435f3066fac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
+--- !u!114 &2132095346493980137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5874040347379232571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a63781549041d94b86ada5d621ed0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterFeedback
+  hitEffect: {fileID: 3898852716216134357, guid: 40027d348f666e647ae3bc3938c5bd82, type: 3}
+  hitSound: {fileID: 0}
+  hitColor: {r: 1, g: 0.35, b: 0.35, a: 1}
+  healEffect: {fileID: 7357587922550474968, guid: 8e79a8f268f2dd44aa9267ec8251e899, type: 3}
+  healSound: {fileID: 0}
+  healColor: {r: 0.45, g: 1, b: 0.5, a: 1}
+  deathEffect: {fileID: 6477035203142922424, guid: c7b8dbb3a2880974cbc0b559854fa358, type: 3}
+  deathSound: {fileID: 0}
+  flashDuration: 0.12
+  blinkInterval: 0.08
+  blinkAlpha: 0.35
 --- !u!1 &6959597446974242245
 GameObject:
   m_ObjectHideFlags: 0
