@@ -3,36 +3,27 @@ using UnityEngine;
 
 public class UIGameHUD : MonoBehaviour
 {
-    [SerializeField] private GameManager gameManager;
+    [SerializeField] private RunTimer runTimer;
     [SerializeField] private TMP_Text timeText;
     [SerializeField] private TMP_Text killsText;
-    [SerializeField] private TMP_Text coinsText;
 
-    private float elapsedTime;
     private int shownSeconds = -1;
     private int kills;
 
     private void OnEnable()
     {
         BaseEnemy.Killed += AddKill;
-        CoinWallet.Changed += RefreshCoins;
         RefreshKills();
-        RefreshCoins();
         RefreshTime();
     }
 
     private void OnDisable()
     {
         BaseEnemy.Killed -= AddKill;
-        CoinWallet.Changed -= RefreshCoins;
     }
 
     private void Update()
     {
-        if (!gameManager.IsPlaying)
-            return;
-
-        elapsedTime += Time.deltaTime;
         RefreshTime();
     }
 
@@ -44,23 +35,17 @@ public class UIGameHUD : MonoBehaviour
 
     private void RefreshTime()
     {
-        int seconds = (int)elapsedTime;
+        int seconds = (int)runTimer.ElapsedTime;
 
         if (seconds == shownSeconds)
             return;
 
         shownSeconds = seconds;
-        timeText.text = $"{seconds / 60:00}:{seconds % 60:00}";
+        timeText.text = RunTimer.Format(runTimer.ElapsedTime);
     }
 
     private void RefreshKills()
     {
         killsText.text = $"Kills: {kills}";
-    }
-
-    private void RefreshCoins()
-    {
-        if (coinsText != null)
-            coinsText.text = $"Coins: {CoinWallet.Coins}";
     }
 }
