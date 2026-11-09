@@ -57,6 +57,17 @@ public class BaseEnemy : Context
         machine.FixedDo();
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (health.IsDead || character.ContactDamage <= 0)
+            return;
+
+        Player player = collision.collider.GetComponentInParent<Player>();
+
+        if (player != null)
+            player.GetComponent<Health>().TakeDamage(character.ContactDamage);
+    }
+
     private void OnDisable()
     {
         sensor.PlayerDetected -= OnPlayerDetection;
