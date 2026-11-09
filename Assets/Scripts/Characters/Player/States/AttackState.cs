@@ -10,7 +10,6 @@ public class AttackState : State
     [SerializeField] private float hitRadius = 0.5f;
     [SerializeField] private Transform hitPoint;
     [SerializeField] private LayerMask targetLayer;
-    [SerializeField] private int damage = 10;
     [Range(0f, 1f)] [SerializeField] private float hitTime = 0.5f;
     [SerializeField] private AudioClip attackSound;
     private bool hasHit;
@@ -57,7 +56,7 @@ public class AttackState : State
             Health health = collider.GetComponentInParent<Health>();
 
             if (health != null)
-                health.TakeDamage(Mathf.RoundToInt(damage * character.DamageMultiplier));
+                health.TakeDamage(Mathf.RoundToInt(character.Config.AttackDamage * character.DamageMultiplier));
         }
     }
 

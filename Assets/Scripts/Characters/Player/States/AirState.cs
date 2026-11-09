@@ -5,7 +5,6 @@ public class AirState : State
 {
     private enum AirPhase { Jump, JumpToFall, Fall }
     
-    [SerializeField] private float jumpHeight = 3f;
     [SerializeField] private AnimationClip jumpClip;
     [SerializeField] private AnimationClip jumpToFallClip;
     [SerializeField] private AnimationClip fallClip;
@@ -16,7 +15,7 @@ public class AirState : State
 
     private const float landingTolerance = 0.1f;
     private float gravity => Mathf.Abs(Physics2D.gravity.y) * body.gravityScale;
-    public float JumpVelocity => Mathf.Sqrt(2 * jumpHeight * gravity);
+    public float JumpVelocity => Mathf.Sqrt(2 * character.Config.JumpHeight * gravity);
     private float apexVelocity => gravity * (jumpToFallClip.length / 2);
     
     public override void Enter()

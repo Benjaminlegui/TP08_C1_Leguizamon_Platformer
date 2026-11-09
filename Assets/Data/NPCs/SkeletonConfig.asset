@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: SkeletonConfig
   m_EditorClassIdentifier: Assembly-CSharp::CharacterConfigSo
   speed: 1
+  jumpHeight: 0
+  airSpeedMultiplier: 0.6
   maxHealth: 100
   invulnerabilityAfterHit: 0
+  attackDamage: 25
+  attackCooldown: 1
   contactDamage: 10
+  healAmount: 25
+  maxHealCharges: 0
+  startHealCharges: 0

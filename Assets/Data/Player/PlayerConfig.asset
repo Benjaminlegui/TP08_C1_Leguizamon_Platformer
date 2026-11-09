@@ -13,5 +13,13 @@ MonoBehaviour:
   m_Name: PlayerConfig
   m_EditorClassIdentifier: Assembly-CSharp::CharacterConfigSo
   speed: 5
+  jumpHeight: 3
+  airSpeedMultiplier: 0.6
   maxHealth: 100
   invulnerabilityAfterHit: 1
+  attackDamage: 10
+  attackCooldown: 0
+  contactDamage: 0
+  healAmount: 25
+  maxHealCharges: 3
+  startHealCharges: 0

@@ -2,12 +2,11 @@ using UnityEngine;
 
 public class DamagePickup : Pickup
 {
-    [SerializeField, Min(1f)] private float damageMultiplier = 1.5f;
-    [SerializeField, Min(0.1f)] private float duration = 10f;
+    [SerializeField] private PickupConfigSo config;
 
     protected override bool TryApply(Player player)
     {
-        player.GetComponent<Character>().ApplyDamageBoost(damageMultiplier, duration);
+        player.GetComponent<Character>().ApplyDamageBoost(config.DamageMultiplier, config.DamageBoostDuration);
         return true;
     }
 }

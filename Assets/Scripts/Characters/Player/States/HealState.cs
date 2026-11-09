@@ -8,12 +8,6 @@ public class HealState : State
     [SerializeField] private float healSpeed = 1f;
     [Range(0f, 1f)]
     [SerializeField] private float healTime = 0.6f;
-    [Min(1)]
-    [SerializeField] private int healAmount = 25;
-    [Min(0)]
-    [SerializeField] private int maxCharges = 3;
-    [Min(0)]
-    [SerializeField] private int startCharges = 0;
 
     private int charges;
     private bool hasHealed;
@@ -22,6 +16,7 @@ public class HealState : State
 
     public int Charges => charges;
     public int MaxCharges => maxCharges;
+    private int maxCharges => character.Config.MaxHealCharges;
     public bool CanHeal => charges > 0 && character.Health.CurrentHealth < character.Health.MaxHealth;
 
     public override bool CanMove => false;
@@ -31,7 +26,7 @@ public class HealState : State
 
     private void Start()
     {
-        SetCharges(startCharges);
+        SetCharges(character.Config.StartHealCharges);
     }
 
     public bool AddCharge()
@@ -60,7 +55,7 @@ public class HealState : State
         {
             hasHealed = true;
             SetCharges(charges - 1);
-            character.Health.Heal(healAmount);
+            character.Health.Heal(character.Config.HealAmount);
         }
 
         if (!isGrounded || progress >= 1)

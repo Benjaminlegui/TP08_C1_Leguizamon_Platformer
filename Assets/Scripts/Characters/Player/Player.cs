@@ -10,9 +10,7 @@ public class Player : Context
     [SerializeField] private DeathState deathState;
 
     private bool jumpRequested;
-    
-    [Range(0.1f, 0.8f)]
-    [SerializeField] private float airSpeedMultiplier = 0.6f;
+
     [Min(0)]
     [SerializeField] private int airJumps = 0;
 
@@ -69,7 +67,7 @@ public class Player : Context
     private void FixedUpdate()
     {
         float moveX = machine.state.CanMove ? character.MoveDirection.x : 0f;
-        float xVelocity = isGrounded ? moveX * character.Speed : moveX * (character.Speed * airSpeedMultiplier);
+        float xVelocity = isGrounded ? moveX * character.Speed : moveX * (character.Speed * character.Config.AirSpeedMultiplier);
         
         if (isGrounded)
             airJumpsUsed = 0;

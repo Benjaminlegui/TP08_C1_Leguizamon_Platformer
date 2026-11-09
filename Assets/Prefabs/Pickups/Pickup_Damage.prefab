@@ -176,5 +176,4 @@ MonoBehaviour:
     m_Bits: 64
   gravity: 20
   groundOffset: 0.32
-  damageMultiplier: 1.5
-  duration: 10
+  config: {fileID: 11400000, guid: 22d48e0a24581380a78cb3996e82faf3, type: 2}

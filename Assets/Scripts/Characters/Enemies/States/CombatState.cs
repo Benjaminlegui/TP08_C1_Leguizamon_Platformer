@@ -7,8 +7,7 @@ public class CombatState : ParentState
     [SerializeField] private MoveState moveState;
     [SerializeField] private IdleState idleState;
     [SerializeField] private AttackState attackState;
-    [SerializeField] private float attackCooldown = 1f;
-    
+
     private float lastAttackTime;
 
     public override void Enter()
@@ -27,7 +26,7 @@ public class CombatState : ParentState
 
         if (attackState.CanHitTarget)
         {
-            if (Time.time - lastAttackTime >= attackCooldown)
+            if (Time.time - lastAttackTime >= character.Config.AttackCooldown)
             {
                 Attack();
             }

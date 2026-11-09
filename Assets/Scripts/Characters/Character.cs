@@ -21,6 +21,7 @@ public class Character : MonoBehaviour
     public bool FrontGrounded => FacingDirection > 0 ? groundCheck.RightGrounded : groundCheck.LeftGrounded;
     public float Speed => config.Speed;
     public int ContactDamage => config.ContactDamage;
+    public CharacterConfigSo Config => config;
     public float DamageMultiplier => Time.time < damageBoostUntil ? damageMultiplier : 1f;
 
     private void Awake()
