@@ -6,6 +6,8 @@ public class CharacterFeedback : MonoBehaviour
     [Header("Hit")]
     [SerializeField] private PooledEffect hitEffect;
     [SerializeField] private AudioClip hitSound;
+    [SerializeField] private AudioClip impactSound;
+    [SerializeField] private AudioClip blockedSound;
     [SerializeField] private Color hitColor = new Color(1f, 0.35f, 0.35f);
 
     [Header("Heal")]
@@ -43,6 +45,7 @@ public class CharacterFeedback : MonoBehaviour
         health.Damaged += OnDamaged;
         health.Healed += OnHealed;
         health.Died += OnDied;
+        health.Blocked += OnBlocked;
     }
 
     private void OnDisable()
@@ -50,6 +53,7 @@ public class CharacterFeedback : MonoBehaviour
         health.Damaged -= OnDamaged;
         health.Healed -= OnHealed;
         health.Died -= OnDied;
+        health.Blocked -= OnBlocked;
         spriteRenderer.color = baseColor;
     }
 
@@ -73,6 +77,12 @@ public class CharacterFeedback : MonoBehaviour
     {
         Flash(hitColor);
         FeedbackPlayer.Play(hitEffect, hitSound, Center);
+        FeedbackPlayer.PlaySound(impactSound);
+    }
+
+    private void OnBlocked()
+    {
+        FeedbackPlayer.PlaySound(blockedSound);
     }
 
     private void OnHealed()

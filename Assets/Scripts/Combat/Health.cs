@@ -16,6 +16,7 @@ public class Health : MonoBehaviour
     public event Action Died;
     public event Action Damaged;
     public event Action Healed;
+    public event Action Blocked;
 
     public void Initialize(int max, float invulnerabilityAfterHit = 0f)
     {
@@ -27,7 +28,13 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        if (IsDead || IsInvulnerable || amount <= 0) return;
+        if (IsDead || amount <= 0) return;
+
+        if (IsInvulnerable)
+        {
+            Blocked?.Invoke();
+            return;
+        }
 
         currentHealth = Mathf.Max(0, currentHealth - amount);
         Changed?.Invoke();

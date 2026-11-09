@@ -9,7 +9,9 @@ public class AirState : State
     [SerializeField] private AnimationClip jumpClip;
     [SerializeField] private AnimationClip jumpToFallClip;
     [SerializeField] private AnimationClip fallClip;
-    
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip landSound;
+
     private AirPhase phase;
 
     private const float landingTolerance = 0.1f;
@@ -20,9 +22,18 @@ public class AirState : State
     public override void Enter()
     {
         if (body.linearVelocity.y > 0)
+        {
             SetPhase(AirPhase.Jump);
+            FeedbackPlayer.PlaySound(jumpSound);
+        }
         else
             SetPhase(AirPhase.Fall);
+    }
+
+    public override void Exit()
+    {
+        if (isGrounded)
+            FeedbackPlayer.PlaySound(landSound);
     }
 
     public override void Do()

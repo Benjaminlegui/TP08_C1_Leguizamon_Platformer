@@ -12,6 +12,7 @@ public class AttackState : State
     [SerializeField] private LayerMask targetLayer;
     [SerializeField] private int damage = 10;
     [Range(0f, 1f)] [SerializeField] private float hitTime = 0.5f;
+    [SerializeField] private AudioClip attackSound;
     private bool hasHit;
     public bool CanHitTarget => FindTarget() != null;
 
@@ -23,6 +24,7 @@ public class AttackState : State
     {
         hasHit = false;
         Play(attackClip, 0f, attackSpeed);
+        FeedbackPlayer.PlaySound(attackSound);
     }
 
     public override void Do()

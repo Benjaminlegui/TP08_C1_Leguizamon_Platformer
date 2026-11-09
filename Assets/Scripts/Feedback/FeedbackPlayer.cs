@@ -22,6 +22,11 @@ public class FeedbackPlayer : MonoBehaviour
         if (effect != null)
             PoolRegistry.Get(effect, position);
 
+        PlaySound(clip);
+    }
+
+    public static void PlaySound(AudioClip clip)
+    {
         if (clip != null && instance != null)
             instance.effectsSource.PlayOneShot(clip);
     }
