@@ -2,7 +2,8 @@
 
 TP08 - A 2D action platformer inspired by **Hollow Knight**. You play as a knight exploring stone ruins full of skeleton warriors. Find the key hidden in the level and use it to open the chest before you run out of health.
 
-- **Play on itch.io:** _coming soon_
+- **Play on itch.io:** https://benjaminlegui.itch.io/stone-ruins-knight
+- **Gameplay video:** https://www.youtube.com/watch?v=xPZp_4v6F-Y
 - **Engine:** Unity 6 (6000.3.21f1), Universal Render Pipeline 2D, Input System
 
 ## Controls
