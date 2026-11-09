@@ -3320,7 +3320,7 @@ MonoBehaviour:
   effectsSource: {fileID: 772901344}
   uiSource: {fileID: 1595637989}
   audioMixer: {fileID: 24100000, guid: a671d4d22da9412a87d2a6a5a0f4e188, type: 2}
-  sceneMusic: {fileID: 0}
+  sceneMusic: {fileID: 8300000, guid: 0afa66b5b3d59d94e554410f6a65d813, type: 3}
   clickSound: {fileID: 8300000, guid: 9852f33e93e680a4aa8dd54bc55e7902, type: 3}
   hoverSound: {fileID: 8300000, guid: 65bdd318e531a6a429303342516ea32f, type: 3}
   backSound: {fileID: 8300000, guid: 9fbe7d8ce7d320942b0ea90b830c62d7, type: 3}
