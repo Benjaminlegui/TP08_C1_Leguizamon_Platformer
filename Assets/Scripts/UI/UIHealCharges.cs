@@ -5,6 +5,8 @@ public class UIHealCharges : MonoBehaviour
 {
     [SerializeField] private HealState healState;
     [SerializeField] private Image[] slots;
+    [SerializeField] private Sprite fullSprite;
+    [SerializeField] private Sprite emptySprite;
     [Range(0f, 1f)]
     [SerializeField] private float emptyAlpha = 0.25f;
 
@@ -23,8 +25,16 @@ public class UIHealCharges : MonoBehaviour
     {
         for (int i = 0; i < slots.Length; i++)
         {
+            bool isFull = i < healState.Charges;
+
+            if (fullSprite != null && emptySprite != null)
+            {
+                slots[i].sprite = isFull ? fullSprite : emptySprite;
+                continue;
+            }
+
             Color color = slots[i].color;
-            color.a = i < healState.Charges ? 1f : emptyAlpha;
+            color.a = isFull ? 1f : emptyAlpha;
             slots[i].color = color;
         }
     }
