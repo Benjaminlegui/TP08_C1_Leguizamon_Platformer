@@ -17,7 +17,7 @@ MonoBehaviour:
   airSpeedMultiplier: 0.6
   maxHealth: 100
   invulnerabilityAfterHit: 1
-  attackDamage: 10
+  attackDamage: 25
   attackCooldown: 0
   contactDamage: 0
   healAmount: 25
