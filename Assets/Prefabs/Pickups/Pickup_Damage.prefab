@@ -80,9 +80,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingLayerID: -1153374643
+  m_SortingLayer: 5
+  m_SortingOrder: -5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 0.3, b: 0.3, a: 1}
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamagePickup
   pickupEffect: {fileID: 9177025244779417070, guid: e589639c19121204ab35c2a92f73b0bd, type: 3}
-  pickupSound: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: 62a7af59b0fc3e6428a262d3930aa5cd, type: 3}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64

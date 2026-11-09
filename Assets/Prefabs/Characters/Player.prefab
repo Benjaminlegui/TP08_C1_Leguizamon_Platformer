@@ -154,9 +154,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1153374643
+  m_SortingLayer: 5
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 815424164945274260, guid: defa226446070c34a858429ea169c716, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -237,8 +237,9 @@ MonoBehaviour:
   healClip: {fileID: 7400000, guid: 1099121d3fe03354985897404956b167, type: 2}
   healSpeed: 1
   healTime: 0.6
-  healAmount: 30
+  healAmount: 25
   maxCharges: 3
+  startCharges: 0
 --- !u!1 &3988389845674415822
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +346,7 @@ MonoBehaviour:
     m_Bits: 128
   damage: 10
   hitTime: 0.5
+  attackSound: {fileID: 8300000, guid: 960550e0c0188e94a88ba2b19672f96c, type: 3}
 --- !u!1 &4526949760714677403
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +514,7 @@ MonoBehaviour:
   hurtState: {fileID: 3676938427181617429}
   deathState: {fileID: 3777213294841699752}
   airSpeedMultiplier: 0.6
+  airJumps: 0
 --- !u!114 &4058663527435378760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,13 +601,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterFeedback
   hitEffect: {fileID: 3898852716216134357, guid: 40027d348f666e647ae3bc3938c5bd82, type: 3}
-  hitSound: {fileID: 0}
+  hitSound: {fileID: 8300000, guid: 60efe661252fa6044a1d7a4b5dabb728, type: 3}
+  impactSound: {fileID: 8300000, guid: 2c3931441f06c5443bb12b5002d95cbf, type: 3}
+  blockedSound: {fileID: 8300000, guid: bd56246a5494a884c8abae948f9de7d2, type: 3}
   hitColor: {r: 1, g: 0.35, b: 0.35, a: 1}
   healEffect: {fileID: 7357587922550474968, guid: 8e79a8f268f2dd44aa9267ec8251e899, type: 3}
-  healSound: {fileID: 0}
+  healSound: {fileID: 8300000, guid: 449019eb9cd3b8843810e7bc3037ca87, type: 3}
   healColor: {r: 0.45, g: 1, b: 0.5, a: 1}
   deathEffect: {fileID: 6477035203142922424, guid: c7b8dbb3a2880974cbc0b559854fa358, type: 3}
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 4d784f2d5df01ed4c88ac4afd1202988, type: 3}
   flashDuration: 0.12
   blinkInterval: 0.08
   blinkAlpha: 0.35
@@ -654,6 +659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RunState
   moveClip: {fileID: 7400000, guid: 760388b932e03b546a342eff37dc0ad4, type: 2}
   clipBaseSpeed: 2
+  footstepSound: {fileID: 8300000, guid: e4c368eaa2b2b0a428c479717f9c609c, type: 3}
+  footstepInterval: 0.3
 --- !u!1 &7541293811744353764
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +709,8 @@ MonoBehaviour:
   jumpClip: {fileID: 7400000, guid: 4dfc3da792fdf0b488011a9b79e0e4bc, type: 2}
   jumpToFallClip: {fileID: 7400000, guid: d739dcd9375264a4ca799c95f83862a1, type: 2}
   fallClip: {fileID: 7400000, guid: 58c3841e11d735d4d837654fc248df80, type: 2}
+  jumpSound: {fileID: 8300000, guid: 8e0f27698af3c0141ad7050e8b61231d, type: 3}
+  landSound: {fileID: 8300000, guid: 98dd155fe3e957649af208514f5fb813, type: 3}
 --- !u!1 &7788393347867084060
 GameObject:
   m_ObjectHideFlags: 0

@@ -80,9 +80,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingLayerID: -1153374643
+  m_SortingLayer: 5
+  m_SortingOrder: -5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.3, g: 1, b: 0.4, a: 1}
@@ -170,10 +170,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthPickup
   pickupEffect: {fileID: 9177025244779417070, guid: e589639c19121204ab35c2a92f73b0bd, type: 3}
-  pickupSound: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: 9aad5bc5da383ba48a63d8b9dbe6c938, type: 3}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   gravity: 20
   groundOffset: 0.2
-  healAmount: 25
