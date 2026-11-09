@@ -19,10 +19,25 @@ public class Player : Context
     private int airJumpsUsed;
 
     public event System.Action Died;
+    public event System.Action KeyChanged;
+
+    public bool HasKey { get; private set; }
 
     public void UnlockAirJumps(int count)
     {
         airJumps = Mathf.Max(airJumps, count);
+    }
+
+    public void CollectKey()
+    {
+        HasKey = true;
+        KeyChanged?.Invoke();
+    }
+
+    public void UseKey()
+    {
+        HasKey = false;
+        KeyChanged?.Invoke();
     }
 
     private void Start()
