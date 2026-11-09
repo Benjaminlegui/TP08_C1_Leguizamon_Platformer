@@ -7,16 +7,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private Player player;
 
-    private Health playerHealth;
-
     public GameState State { get; private set; } = GameState.Playing;
     public bool IsPlaying => State == GameState.Playing;
     public event Action Changed;
 
-    private void Awake() => playerHealth = player.GetComponent<Health>();
-
-    private void OnEnable() => playerHealth.Died += EndGame;
-    private void OnDisable() => playerHealth.Died -= EndGame;
+    private void OnEnable() => player.Died += EndGame;
+    private void OnDisable() => player.Died -= EndGame;
 
     public void EndGame()
     {

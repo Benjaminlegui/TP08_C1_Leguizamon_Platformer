@@ -7,11 +7,14 @@ public class Player : Context
     [SerializeField] private AirState airState;
     [SerializeField] private GroundState groundState;
     [SerializeField] private HurtState hurtState;
-    
+    [SerializeField] private DeathState deathState;
+
     private bool jumpRequested;
     
     [Range(0.1f, 0.8f)]
     [SerializeField] private float airSpeedMultiplier = 0.6f;
+
+    public event System.Action Died;
 
     private void Start()
     {
@@ -21,6 +24,8 @@ public class Player : Context
     private void OnEnable()
     {
         health.Damaged += OnDamaged;
+        health.Died += OnDied;
+        deathState.Finished += OnDeathFinished;
     }
 
     private void Update()
@@ -57,6 +62,8 @@ public class Player : Context
     private void OnDisable()
     {
         health.Damaged -= OnDamaged;
+        health.Died -= OnDied;
+        deathState.Finished -= OnDeathFinished;
     }
 
     private void OnMove(InputValue value)
@@ -84,7 +91,20 @@ public class Player : Context
 
     private void OnDamaged()
     {
+        if (health.IsDead)
+            return;
+
         machine.Set(hurtState);
+    }
+
+    private void OnDied()
+    {
+        machine.Set(deathState);
+    }
+
+    private void OnDeathFinished()
+    {
+        Died?.Invoke();
     }
     
     private void SelectState()

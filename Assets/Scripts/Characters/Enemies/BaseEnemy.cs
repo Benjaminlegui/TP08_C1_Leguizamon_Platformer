@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Character))]
@@ -6,12 +7,15 @@ public class BaseEnemy : Context
     [SerializeField] private PatrolState patrolState;
     [SerializeField] private CombatState combatState;
     [SerializeField] private HurtState hurtState;
-    
+    [SerializeField] private DeathState deathState;
+
     private EnemySensor sensor;
     public Transform Target => sensor.Target;
     public float DirectionToTarget => Mathf.Sign(Target.position.x - transform.position.x);
     public bool CanSeeTarget => Target != null;
-    
+
+    public static event Action Killed;
+
     protected override void Awake()
     {
         base.Awake();
@@ -23,7 +27,8 @@ public class BaseEnemy : Context
         sensor.PlayerDetected += OnPlayerDetection;
         sensor.PlayerLost += OnPlayerLost;
         health.Damaged += OnDamaged;
-
+        health.Died += OnDied;
+        deathState.Finished += OnDeathFinished;
     }
     
     private void Start()
@@ -57,11 +62,27 @@ public class BaseEnemy : Context
         sensor.PlayerDetected -= OnPlayerDetection;
         sensor.PlayerLost -= OnPlayerLost;
         health.Damaged -= OnDamaged;
+        health.Died -= OnDied;
+        deathState.Finished -= OnDeathFinished;
     }
 
     private void OnDamaged()
     {
+        if (health.IsDead)
+            return;
+
         machine.Set(hurtState, true);
+    }
+
+    private void OnDied()
+    {
+        machine.Set(deathState);
+        Killed?.Invoke();
+    }
+
+    private void OnDeathFinished()
+    {
+        gameObject.SetActive(false);
     }
     
     protected virtual void SelectState()
@@ -78,7 +99,7 @@ public class BaseEnemy : Context
 
     private void OnPlayerDetection()
     {
-        if (machine.state == hurtState)
+        if (machine.state == hurtState || health.IsDead)
             return;
         
         machine.Set(combatState);
@@ -86,7 +107,7 @@ public class BaseEnemy : Context
 
     private void OnPlayerLost()
     {
-        if (machine.state == hurtState)
+        if (machine.state == hurtState || health.IsDead)
             return;
         
         machine.Set(patrolState);
