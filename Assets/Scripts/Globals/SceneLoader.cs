@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public static class SceneLoader
 {
     public const string MainMenuScene = "MainMenu";
-    public const string GameplayScene = "SampleScene";
+    public const string GameplayScene = "GamePlay";
 
     public static void LoadMainMenu() => Load(MainMenuScene);
     public static void LoadGameplay() => Load(GameplayScene);
