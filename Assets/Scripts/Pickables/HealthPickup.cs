@@ -2,16 +2,10 @@ using UnityEngine;
 
 public class HealthPickup : Pickup
 {
-    [SerializeField, Min(1)] private int healAmount = 25;
-
     protected override bool TryApply(Player player)
     {
-        Health health = player.GetComponent<Health>();
+        HealState healState = player.GetComponentInChildren<HealState>(true);
 
-        if (health.CurrentHealth >= health.MaxHealth)
-            return false;
-
-        health.Heal(healAmount);
-        return true;
+        return healState != null && healState.AddCharge();
     }
 }
