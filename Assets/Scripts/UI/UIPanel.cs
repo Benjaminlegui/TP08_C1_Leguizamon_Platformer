@@ -7,10 +7,15 @@ public class UIPanel : MonoBehaviour
 
     private bool isOpen;
     private float previousTimeScale = 1f;
+    private AudioManager audioManager;
 
     public bool IsOpen => isOpen;
 
-    private void Awake() => content.SetActive(false);
+    private void Awake()
+    {
+        content.SetActive(false);
+        audioManager = FindAnyObjectByType<AudioManager>();
+    }
 
     public void Open()
     {
@@ -20,6 +25,7 @@ public class UIPanel : MonoBehaviour
         {
             previousTimeScale = Time.timeScale;
             Time.timeScale = 0f;
+            if (audioManager != null) audioManager.PlayUI(AudioManager.UISound.Pause);
         }
         content.SetActive(true);
     }
@@ -29,7 +35,11 @@ public class UIPanel : MonoBehaviour
         if (!isOpen) return;
         isOpen = false;
         content.SetActive(false);
-        if (pausesGame) Time.timeScale = previousTimeScale;
+        if (pausesGame)
+        {
+            Time.timeScale = previousTimeScale;
+            if (audioManager != null) audioManager.PlayUI(AudioManager.UISound.Unpause);
+        }
     }
 
     private void OnDisable() => Close();
