@@ -13,8 +13,17 @@ public class Player : Context
     
     [Range(0.1f, 0.8f)]
     [SerializeField] private float airSpeedMultiplier = 0.6f;
+    [Min(0)]
+    [SerializeField] private int airJumps = 0;
+
+    private int airJumpsUsed;
 
     public event System.Action Died;
+
+    public void UnlockAirJumps(int count)
+    {
+        airJumps = Mathf.Max(airJumps, count);
+    }
 
     private void Start()
     {
@@ -47,9 +56,21 @@ public class Player : Context
         float moveX = machine.state.CanMove ? character.MoveDirection.x : 0f;
         float xVelocity = isGrounded ? moveX * character.Speed : moveX * (character.Speed * airSpeedMultiplier);
         
-        if (isGrounded && jumpRequested && machine.state.CanJump)
+        if (isGrounded)
+            airJumpsUsed = 0;
+
+        if (jumpRequested && machine.state.CanJump)
         {
-            body.linearVelocity = new Vector2(body.linearVelocity.x, airState.JumpVelocity);
+            if (isGrounded)
+            {
+                body.linearVelocity = new Vector2(body.linearVelocity.x, airState.JumpVelocity);
+            }
+            else if (airJumpsUsed < airJumps)
+            {
+                airJumpsUsed++;
+                body.linearVelocity = new Vector2(body.linearVelocity.x, airState.JumpVelocity);
+                airState.AirJump();
+            }
         }
         
         jumpRequested = false;

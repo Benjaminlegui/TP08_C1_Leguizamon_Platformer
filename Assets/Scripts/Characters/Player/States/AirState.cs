@@ -36,6 +36,12 @@ public class AirState : State
             FeedbackPlayer.PlaySound(landSound);
     }
 
+    public void AirJump()
+    {
+        SetPhase(AirPhase.Jump);
+        FeedbackPlayer.PlaySound(jumpSound);
+    }
+
     public override void Do()
     {
         if (phase != AirPhase.Jump && body.linearVelocity.y > apexVelocity)
