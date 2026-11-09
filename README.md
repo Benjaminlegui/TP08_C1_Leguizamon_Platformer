@@ -1,6 +1,6 @@
-# TP08 - 2D Platformer
+# Stone Ruins Knight
 
-A 2D action platformer inspired by **Hollow Knight**. You play as a knight exploring stone ruins full of skeleton warriors. Find the key hidden in the level and use it to open the chest before you run out of health.
+TP08 - A 2D action platformer inspired by **Hollow Knight**. You play as a knight exploring stone ruins full of skeleton warriors. Find the key hidden in the level and use it to open the chest before you run out of health.
 
 - **Play on itch.io:** _coming soon_
 - **Engine:** Unity 6 (6000.3.21f1), Universal Render Pipeline 2D, Input System
@@ -39,7 +39,7 @@ A 2D action platformer inspired by **Hollow Knight**. You play as a knight explo
 - **Pickups:** heal, damage boost, invulnerability, double jump and key, spawned from a generic object pool.
 - **Audio:** Audio Mixer with Master, Music, Effects and UI groups, volume sliders in Settings and sound effects for every action.
 - **Data:** gameplay values in ScriptableObjects (`CharacterConfigSo`, `PickupConfigSo`). Volume and best time saved with PlayerPrefs.
-- **Flow:** main menu, settings, credits, gameplay, game over and level complete screens with retry and menu options.
+- **Flow:** splash screen, main menu, settings, credits, gameplay, game over and level complete screens with retry and menu options.
 
 ## Project structure
 
@@ -49,7 +49,7 @@ Assets/
   Audio/        Audio Mixer, music and sound effects
   Data/         ScriptableObject assets (characters and pickups)
   Prefabs/      Player, pickups, effects and UI
-  Scenes/       MainMenu and GamePlay
+  Scenes/       Splash, MainMenu and GamePlay
   Scripts/      Characters, combat, pickups, pooling, audio and UI
 ```
 
