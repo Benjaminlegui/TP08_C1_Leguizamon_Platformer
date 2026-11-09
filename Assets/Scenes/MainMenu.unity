@@ -3113,9 +3113,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<size=140%><b>CREDITS</b></size>\n\n<b>ART</b>\nWizard \u2014 (autor)\nPixel
-    UI pack 3 \u2014 (autor)\n\n<b>AUDIO</b>\n(completar)\n\n<size=85%>Made with
-    Unity</size>"
+  m_text: "<size=140%><b>CREDITS</b></size>\n\n<b>GAME</b>\nBenjamin Leguizamon\n\n<b>ART</b>\nKnight
+    & Skeleton Warrior - Xzany\nStone Ruins tileset - Nico Pardo\nDark Ages UI - Hypnobius\nPixel
+    Icon Pack - hayyans\nScrolls - Robert Brooks\nDungeon Font - vrtxrry\n\n<b>AUDIO</b>\nRPG
+    Essentials SFX - Leohpaz\nAtmospheric Adventures - Rosentwig\n\n<size=85%>Made
+    with Unity</size>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
