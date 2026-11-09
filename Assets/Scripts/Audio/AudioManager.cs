@@ -3,19 +3,16 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    public enum VolumeChannel { Master, Music, Effects, UI }
     public enum UISound { Click, Hover, Back, Pause, Unpause }
 
     #region MixerConstants
         private const string MasterVolumePrefsKey = "Platformer.MasterVolume";
         private const string MusicVolumePrefsKey = "Platformer.MusicVolume";
         private const string EffectsVolumePrefsKey = "Platformer.EffectsVolume";
-        private const string UIVolumePrefsKey = "Platformer.UIVolume";
 
         private const string MasterVolumeMixerParameter = "MasterVolume";
         private const string MusicVolumeMixerParameter = "MusicVolume";
         private const string EffectsVolumeMixerParameter = "EffectsVolume";
-        private const string UIVolumeMixerParameter = "UIVolume";
     #endregion
 
     [SerializeField] private AudioSource musicSource;
@@ -35,7 +32,6 @@ public class AudioManager : MonoBehaviour
         public float MasterVolume { get; private set; }
         public float MusicVolume { get; private set; }
         public float EffectsVolume { get; private set; }
-        public float UIVolume { get; private set; }
 
     #endregion
 
@@ -44,18 +40,10 @@ public class AudioManager : MonoBehaviour
         MasterVolume = Mathf.Clamp01(PlayerPrefs.GetFloat(MasterVolumePrefsKey, 0.2f));
         MusicVolume = Mathf.Clamp01(PlayerPrefs.GetFloat(MusicVolumePrefsKey, 0.4f));
         EffectsVolume = Mathf.Clamp01(PlayerPrefs.GetFloat(EffectsVolumePrefsKey, 1f));
-        UIVolume = Mathf.Clamp01(PlayerPrefs.GetFloat(UIVolumePrefsKey, 1f));
-        musicSource.playOnAwake = false;
-        effectsSource.playOnAwake = false;
+        musicSource.playOnAwake = effectsSource.playOnAwake = uiSource.playOnAwake = false;
         musicSource.loop = true;
-        musicSource.spatialBlend = effectsSource.spatialBlend = 0f;
-
-        if (uiSource != null)
-        {
-            uiSource.playOnAwake = false;
-            uiSource.spatialBlend = 0f;
-            uiSource.ignoreListenerPause = true;
-        }
+        musicSource.spatialBlend = effectsSource.spatialBlend = uiSource.spatialBlend = 0f;
+        uiSource.ignoreListenerPause = true;
     }
 
     private void Start()
@@ -63,7 +51,6 @@ public class AudioManager : MonoBehaviour
         ApplyVolume(MasterVolumeMixerParameter, MasterVolume);
         ApplyVolume(MusicVolumeMixerParameter, MusicVolume);
         ApplyVolume(EffectsVolumeMixerParameter, EffectsVolume);
-        ApplyVolume(UIVolumeMixerParameter, UIVolume);
         if (sceneMusic != null) PlayMusic(sceneMusic);
     }
 
@@ -73,9 +60,6 @@ public class AudioManager : MonoBehaviour
         effectsSource.Stop();
         PlayerPrefs.Save();
     }
-    
-    public void StopMusic() => musicSource.Stop();
-    public void StopEffects() => effectsSource.Stop();
 
     public void PlayMusic(AudioClip clip)
     {
@@ -83,11 +67,6 @@ public class AudioManager : MonoBehaviour
         if (clip == null) return;
         musicSource.clip = clip;
         musicSource.Play();
-    }
-    
-    public void PlayEffect(AudioClip clip)
-    {
-        if (clip != null) effectsSource.PlayOneShot(clip);
     }
 
     public void PlayUI(UISound sound)
@@ -101,7 +80,7 @@ public class AudioManager : MonoBehaviour
             _ => clickSound
         };
 
-        if (clip != null && uiSource != null) uiSource.PlayOneShot(clip);
+        if (clip != null) uiSource.PlayOneShot(clip);
     }
 
     public void SetMasterVolume(float value)
@@ -123,32 +102,6 @@ public class AudioManager : MonoBehaviour
         EffectsVolume = Mathf.Clamp01(value);
         ApplyVolume(EffectsVolumeMixerParameter, EffectsVolume);
         PlayerPrefs.SetFloat(EffectsVolumePrefsKey, EffectsVolume);
-    }
-
-    public void SetUIVolume(float value)
-    {
-        UIVolume = Mathf.Clamp01(value);
-        ApplyVolume(UIVolumeMixerParameter, UIVolume);
-        PlayerPrefs.SetFloat(UIVolumePrefsKey, UIVolume);
-    }
-
-    public float GetVolume(VolumeChannel channel) => channel switch
-    {
-        VolumeChannel.Music => MusicVolume,
-        VolumeChannel.Effects => EffectsVolume,
-        VolumeChannel.UI => UIVolume,
-        _ => MasterVolume
-    };
-
-    public void SetVolume(VolumeChannel channel, float value)
-    {
-        switch (channel)
-        {
-            case VolumeChannel.Master: SetMasterVolume(value); break;
-            case VolumeChannel.Music: SetMusicVolume(value); break;
-            case VolumeChannel.Effects: SetEffectsVolume(value); break;
-            case VolumeChannel.UI: SetUIVolume(value); break;
-        }
     }
 
     private void ApplyVolume(string parameter, float value)

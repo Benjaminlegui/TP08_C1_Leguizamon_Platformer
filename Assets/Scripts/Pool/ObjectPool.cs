@@ -45,14 +45,6 @@ public class ObjectPool<T> where T : Component
         available.Enqueue(item);
     }
 
-    public void ReleaseAll()
-    {
-        foreach (T item in new List<T>(inUse))
-        {
-            Release(item);
-        }
-    }
-
     private T Create()
     {
         T item = Object.Instantiate(prefab, parent);

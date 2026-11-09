@@ -15,7 +15,6 @@ public class HealState : State
     public event Action ChargesChanged;
 
     public int Charges => charges;
-    public int MaxCharges => maxCharges;
     private int maxCharges => character.Config.MaxHealCharges;
     public bool CanHeal => charges > 0 && character.Health.CurrentHealth < character.Health.MaxHealth;
 
@@ -36,11 +35,6 @@ public class HealState : State
 
         SetCharges(charges + 1);
         return true;
-    }
-
-    public void RefillCharges()
-    {
-        SetCharges(maxCharges);
     }
 
     public override void Enter()

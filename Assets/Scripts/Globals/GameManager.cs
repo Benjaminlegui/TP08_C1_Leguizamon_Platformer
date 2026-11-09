@@ -18,8 +18,6 @@ public class GameManager : MonoBehaviour
 
     public void WinGame() => Finish(GameState.Won);
 
-    public void RestartGame() => SceneLoader.LoadGameplay();
-
     private void Finish(GameState state)
     {
         if (!IsPlaying) return;

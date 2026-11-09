@@ -1,10 +1,7 @@
-using System;
 using UnityEngine;
 
 public abstract class Pickup : Spawn
 {
-    public static event Action PickedUp;
-
     [SerializeField] private PooledEffect pickupEffect;
     [SerializeField] private AudioClip pickupSound;
     [SerializeField] private LayerMask groundLayer;
@@ -55,7 +52,6 @@ public abstract class Pickup : Spawn
         if (player == null || !TryApply(player))
             return;
 
-        PickedUp?.Invoke();
         FeedbackPlayer.Play(pickupEffect, pickupSound, transform.position);
         Despawn();
     }
