@@ -1,0 +1,1911 @@
+fileFormatVersion: 2
+guid: 1da8516cb5d578a45a48749caebea0a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7309103853952315467
+    second: DarkAgesUI_0
+  - first:
+      213: -7112798391702085703
+    second: DarkAgesUI_1
+  - first:
+      213: 8825121292331563684
+    second: DarkAgesUI_2
+  - first:
+      213: 4315697992835057669
+    second: DarkAgesUI_3
+  - first:
+      213: -1653298263279255246
+    second: DarkAgesUI_4
+  - first:
+      213: 7502227176840063936
+    second: DarkAgesUI_5
+  - first:
+      213: -970324785954240402
+    second: DarkAgesUI_6
+  - first:
+      213: 7945749816879061187
+    second: DarkAgesUI_7
+  - first:
+      213: 2474274880660467212
+    second: DarkAgesUI_8
+  - first:
+      213: 7061784263792171518
+    second: DarkAgesUI_9
+  - first:
+      213: 3526190952980779544
+    second: DarkAgesUI_10
+  - first:
+      213: 8552365541923444171
+    second: DarkAgesUI_11
+  - first:
+      213: -580557484033472257
+    second: DarkAgesUI_12
+  - first:
+      213: 5221653734326392772
+    second: DarkAgesUI_13
+  - first:
+      213: -2380500448610807550
+    second: DarkAgesUI_14
+  - first:
+      213: 4569557860966180970
+    second: DarkAgesUI_15
+  - first:
+      213: 3674049396027528086
+    second: DarkAgesUI_16
+  - first:
+      213: -3712753715965893060
+    second: DarkAgesUI_17
+  - first:
+      213: -1767288741445616932
+    second: DarkAgesUI_18
+  - first:
+      213: 6839327652915845725
+    second: DarkAgesUI_19
+  - first:
+      213: 3599765296931069200
+    second: DarkAgesUI_20
+  - first:
+      213: -4406960001484708053
+    second: DarkAgesUI_21
+  - first:
+      213: -5704407269387187745
+    second: DarkAgesUI_22
+  - first:
+      213: 6184950411190957527
+    second: DarkAgesUI_23
+  - first:
+      213: -3644075534716988871
+    second: DarkAgesUI_24
+  - first:
+      213: -7427272236666807319
+    second: DarkAgesUI_25
+  - first:
+      213: 704909480135534325
+    second: DarkAgesUI_26
+  - first:
+      213: 8083068509769895854
+    second: DarkAgesUI_27
+  - first:
+      213: -2172048067385049645
+    second: DarkAgesUI_28
+  - first:
+      213: -5462115944617410340
+    second: DarkAgesUI_29
+  - first:
+      213: -8610676301929218209
+    second: DarkAgesUI_30
+  - first:
+      213: -2058459717819278304
+    second: DarkAgesUI_31
+  - first:
+      213: -1257383834084381582
+    second: DarkAgesUI_32
+  - first:
+      213: 8439593859560620974
+    second: DarkAgesUI_33
+  - first:
+      213: 2518729178325000609
+    second: DarkAgesUI_34
+  - first:
+      213: 5090275246828069499
+    second: DarkAgesUI_35
+  - first:
+      213: -1895799583188343277
+    second: DarkAgesUI_36
+  - first:
+      213: 4104723002672699407
+    second: DarkAgesUI_37
+  - first:
+      213: -218702249066213191
+    second: DarkAgesUI_38
+  - first:
+      213: 1449293143688691408
+    second: DarkAgesUI_39
+  - first:
+      213: 8240878352871312473
+    second: DarkAgesUI_40
+  - first:
+      213: 4816611021650630313
+    second: DarkAgesUI_41
+  - first:
+      213: 2009727589795044024
+    second: DarkAgesUI_42
+  - first:
+      213: 4880649888443361475
+    second: DarkAgesUI_43
+  - first:
+      213: -5859069801877728711
+    second: DarkAgesUI_44
+  - first:
+      213: -6069300404360471841
+    second: DarkAgesUI_45
+  - first:
+      213: 2732758703977606996
+    second: DarkAgesUI_46
+  - first:
+      213: -2456979293663309599
+    second: DarkAgesUI_47
+  - first:
+      213: 3288068881460074513
+    second: DarkAgesUI_48
+  - first:
+      213: 3166123055983973368
+    second: DarkAgesUI_49
+  - first:
+      213: 8342180034041685957
+    second: DarkAgesUI_50
+  - first:
+      213: 7978325256684659935
+    second: DarkAgesUI_51
+  - first:
+      213: 1794540144868460451
+    second: DarkAgesUI_52
+  - first:
+      213: 8268505394431185834
+    second: DarkAgesUI_53
+  - first:
+      213: 6937472819569711419
+    second: DarkAgesUI_54
+  - first:
+      213: -4617248606603427261
+    second: DarkAgesUI_55
+  - first:
+      213: 8352230902778004364
+    second: DarkAgesUI_56
+  - first:
+      213: 6966468504851710258
+    second: DarkAgesUI_57
+  - first:
+      213: -8556972522059389846
+    second: DarkAgesUI_58
+  - first:
+      213: 4508743722928897225
+    second: DarkAgesUI_59
+  - first:
+      213: -4255486193539745012
+    second: DarkAgesUI_60
+  - first:
+      213: 1270425520180412761
+    second: DarkAgesUI_61
+  - first:
+      213: -503171105614340641
+    second: DarkAgesUI_62
+  - first:
+      213: -3729280908196762658
+    second: DarkAgesUI_63
+  - first:
+      213: 8672009419129746156
+    second: DarkAgesUI_64
+  - first:
+      213: -2516694248526644466
+    second: DarkAgesUI_65
+  - first:
+      213: 2536731967297490836
+    second: DarkAgesUI_66
+  - first:
+      213: -8789634221713328166
+    second: DarkAgesUI_67
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: darkages_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 229
+        width: 192
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3803fb3938759d54991ea25fff738a72
+      internalID: -1831949546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_01
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 274
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ac0b577b47a524fada4bf356a699d4
+      internalID: 443984850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_02
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 274
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a86718d153eff4b9c28e5b68344f63
+      internalID: 637086533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_03
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15b9f7cecabd4b48ad4ed9ee63b5cc8
+      internalID: 1970487603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_04
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 231
+        width: 96
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69875b19a81db6c4eb54ae0d620485e1
+      internalID: 1291158868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_05
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 224
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1545c7bf68716d4ab8679c3ba56234e
+      internalID: -235005176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_06
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 224
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c300094418dc9a428c6aa491d82bdc9
+      internalID: -321676918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_07
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 135
+        width: 7
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390e228351fa8a745b2c8e117010b5e6
+      internalID: 186578948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_08
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 135
+        width: 7
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254cd4be422293040ad26dd9a29d6d74
+      internalID: 1284729908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_09
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 135
+        width: 7
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e1b077fc66a1f48a49e0b21c16d689
+      internalID: 241059477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_10
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 202
+        width: 86
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44febc55aca40d04bb2f5e62550ae82b
+      internalID: -461890900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 204
+        width: 84
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c65b7b04a0c0b4bb365a45fed77a92
+      internalID: -850122017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_12
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 204
+        width: 82
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7896b593ec9bfa4192dff8b52f6cef3
+      internalID: -1445143697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_13
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 173
+        width: 84
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1432dcaa5d9ba2a44bad174470e7b8dc
+      internalID: -2082712549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_14
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 172
+        width: 82
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418b39e66b4680c43a6a3c4f68f8da40
+      internalID: 265699475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_15
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 172
+        width: 82
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3d9fb8e17a26a46bef9a1631429358
+      internalID: -1733316999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 153
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e36593e8fddf7349b636bcf6d4b2e9d
+      internalID: 2104386541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 150
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a512831b96a8e4d968f7615354087d
+      internalID: -1129944737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_18
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 150
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d2c16eef5e8df458521dd6b94efd55
+      internalID: 267093923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_19
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 153
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e012bc1c154e34ba4bf93ac27a68dd
+      internalID: 2143590620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 150
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc19fc3a003ca44985d23e8a96d7c32
+      internalID: -1244247428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_21
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 150
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50698daf1ac8a741a9c5e400407de19
+      internalID: 2017291203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_22
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 153
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b870722e3731e1141bba8f00e2010daa
+      internalID: 720071159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_23
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 148
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74597052f0cfc54fa6e7d95081c7c4d
+      internalID: -1098367090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 129
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c48fc01525aa564682c9a0a9f7ffdb3
+      internalID: -1714780664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_25
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 129
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440739b0c2017104da5ae9f99a85251a
+      internalID: -733209864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_26
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 129
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9ef6a65a582bd48b8bfba1b558c1ae
+      internalID: -165297022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_27
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 139
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e45428065f9314ba8fde9e64073b00
+      internalID: -1215942053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_28
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 139
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eebf12222c61e84eaf10e55f755b670
+      internalID: 1632413743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_29
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 140
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b28f33ca2835384eaf984f39c7514e9
+      internalID: 156009856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_30
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 140
+        width: 84
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eda0c4c563f27b47b5dca3897712f38
+      internalID: 2103778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_31
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 116
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c8b83b2ba397b488ec520e91f52244
+      internalID: -926932182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 104
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbeafefc85f276458333d9e5593796b
+      internalID: 1611847086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_33
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 104
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b78393564e5a04a9bed2960cf1658d
+      internalID: 558365746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_34
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 104
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5405959659b2db6409e6b8bd22263a8d
+      internalID: -231465946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_35
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 98
+        width: 5
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3158b8f929502438b110a0eb1cacd8
+      internalID: -1968924947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_36
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 103
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c4905e2f6b3ce48a6cc84cb37fdef1
+      internalID: -14735504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_37
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 107
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7643e627abe0bdc45bb06742b769c7f2
+      internalID: -151300701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_38
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 107
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98b2bd7967d5314b80b3ce9e9933fd2
+      internalID: -1015199237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_39
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 108
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f58a0eb2fa09a44a1ffc3ed0129dff
+      internalID: 643770091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_40
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 110
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4d3900d73fd524fb4332a294615dce
+      internalID: 1308449927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_41
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 108
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68450f17e42ac374a86278ce1c5d2ff0
+      internalID: 1640719683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_42
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 52
+        width: 8
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3705f1e38f524448bb1f4e6be6909be
+      internalID: -693803794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_43
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 52
+        width: 8
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414374abff774e94590dc40908cc96f3
+      internalID: 1317953570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_44
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 96
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746158517b40dc64bb60d147b8292038
+      internalID: -1868759984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_45
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 96
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32d32b63752b4643914d3789fdb6418
+      internalID: 164910010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_46
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 96
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6b941d43d8dbc43b09f75a3830932e
+      internalID: -2120785682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_47
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 96
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e3a3fd217df4f43974a2ad6441b239
+      internalID: 1766328782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3552e632ab7e68f45aac762c8a86fe72
+      internalID: -68875852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_49
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 96
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3b84a601f50c044b0ab76d4f3c0b57
+      internalID: -867812822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_50
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 96
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2471473adff3e914d8de81433c89ce5f
+      internalID: 1427373885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_51
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 74
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df642e77eca08d4ebfcde9b88e5da95
+      internalID: -513092332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_52
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 73
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9caba93d8d0345143b22944b2ea86194
+      internalID: 905770640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_53
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 73
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5159aaa1b934bc848b456b462910281a
+      internalID: -186317984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_54
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 74
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70340254b50748f49a270b0f9ed03439
+      internalID: 1544544636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_55
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 79
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0904b0922cfb694e8d69b5b77e44e52
+      internalID: 1261355376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_56
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 76
+        width: 55
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844df4290146f1842be593c18577fe33
+      internalID: -541343814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_57
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 76
+        width: 40
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c19effbb49c2d740bf1dd9ef5bcce41
+      internalID: 1475835137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_58
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 76
+        width: 40
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a256d9e22352ba449a960a0f70debc4e
+      internalID: 1666130082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_59
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 42
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123ace8f797ac1e4b855c1a88b509b52
+      internalID: -37741667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_60
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 41
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a691e9bd78d1b49a92067d47655237
+      internalID: 400556408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_61
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 41
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3779044d2037ad4cb96b25ea60ed9ef
+      internalID: -139822339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_62
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 42
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: becadfb2fe56a6841854f3c3f8d71ca3
+      internalID: 916004354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_63
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 47
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9523ad875cc2e469c07deef4680475
+      internalID: -1968328992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_64
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 44
+        width: 55
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e985f7aff3ad0eb4185a11afea6f94a4
+      internalID: -1562388166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_65
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 44
+        width: 40
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e2e6bb5981e1a48b9c7a039a08484d
+      internalID: 1953738741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_66
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 44
+        width: 40
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940296aefc9e1e949b0fb13e9bcb2f1e
+      internalID: -1863762762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkages_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b976ab55739a5424db1e5d4ae2700ee5
+      internalID: 1491864287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ed09b42aef08f9a45a131c33a8465400
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      darkages_00: -1831949546
+      darkages_01: 443984850
+      darkages_02: 637086533
+      darkages_03: 1970487603
+      darkages_04: 1291158868
+      darkages_05: -235005176
+      darkages_06: -321676918
+      darkages_07: 186578948
+      darkages_08: 1284729908
+      darkages_09: 241059477
+      darkages_10: -461890900
+      darkages_11: -850122017
+      darkages_12: -1445143697
+      darkages_13: -2082712549
+      darkages_14: 265699475
+      darkages_15: -1733316999
+      darkages_16: 2104386541
+      darkages_17: -1129944737
+      darkages_18: 267093923
+      darkages_19: 2143590620
+      darkages_20: -1244247428
+      darkages_21: 2017291203
+      darkages_22: 720071159
+      darkages_23: -1098367090
+      darkages_24: -1714780664
+      darkages_25: -733209864
+      darkages_26: -165297022
+      darkages_27: -1215942053
+      darkages_28: 1632413743
+      darkages_29: 156009856
+      darkages_30: 2103778
+      darkages_31: -926932182
+      darkages_32: 1611847086
+      darkages_33: 558365746
+      darkages_34: -231465946
+      darkages_35: -1968924947
+      darkages_36: -14735504
+      darkages_37: -151300701
+      darkages_38: -1015199237
+      darkages_39: 643770091
+      darkages_40: 1308449927
+      darkages_41: 1640719683
+      darkages_42: -693803794
+      darkages_43: 1317953570
+      darkages_44: -1868759984
+      darkages_45: 164910010
+      darkages_46: -2120785682
+      darkages_47: 1766328782
+      darkages_48: -68875852
+      darkages_49: -867812822
+      darkages_50: 1427373885
+      darkages_51: -513092332
+      darkages_52: 905770640
+      darkages_53: -186317984
+      darkages_54: 1544544636
+      darkages_55: 1261355376
+      darkages_56: -541343814
+      darkages_57: 1475835137
+      darkages_58: 1666130082
+      darkages_59: -37741667
+      darkages_60: 400556408
+      darkages_61: -139822339
+      darkages_62: 916004354
+      darkages_63: -1968328992
+      darkages_64: -1562388166
+      darkages_65: 1953738741
+      darkages_66: -1863762762
+      darkages_67: 1491864287
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
