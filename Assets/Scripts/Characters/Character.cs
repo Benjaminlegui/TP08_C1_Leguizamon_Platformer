@@ -41,6 +41,8 @@ public class Character : MonoBehaviour
     
     public void Face(float direction)
     {
+        // Warning: comparacion de float con ==. Con un stick analogico el valor puede quedar en 0.0001 y el personaje gira igual.
+        // Usa Mathf.Approximately(direction, 0f) o un umbral (Mathf.Abs(direction) < 0.01f).
         if (direction == 0f)
             return;
 

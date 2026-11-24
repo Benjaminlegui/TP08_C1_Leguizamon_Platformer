@@ -4,6 +4,8 @@ using UnityEngine;
 public class EnemySensor : MonoBehaviour
 {
     [SerializeField] private LayerMask groundLayer;
+    // Suggestion: wallLayer esta serializado pero nunca se usa. PatrolState solo gira en bordes de plataforma, no contra paredes.
+    // Usalo para un raycast frontal o borralo.
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float detectionRange = 5f;

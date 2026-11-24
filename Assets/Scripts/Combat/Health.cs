@@ -32,6 +32,8 @@ public class Health : MonoBehaviour
 
         if (IsInvulnerable)
         {
+            // Bug: Blocked se dispara en cada llamada a TakeDamage. Como BaseEnemy aplica daño de contacto en OnCollisionStay2D (cada paso de fisica),
+            // mientras el jugador es invulnerable y toca un enemigo, CharacterFeedback reproduce blockedSound unas 50 veces por segundo. Limita el evento con un cooldown.
             Blocked?.Invoke();
             return;
         }

@@ -6,7 +6,9 @@ public class PatrolState : ParentState
     [SerializeField] private MoveState moveState;
     [SerializeField] private IdleState idleState;
 
+    // Suggestion: numero magico no configurable. La espera de patrulla deberia estar en CharacterConfigSo (consigna: configuraciones en ScriptableObject) o al menos en [SerializeField].
     private float waitTime = 2f;
+    // Suggestion: lastDirection no se usa en ningun lado, y using System.Collections (linea 1) tampoco. Borralos.
     private float lastDirection;
     
     public override void Enter()

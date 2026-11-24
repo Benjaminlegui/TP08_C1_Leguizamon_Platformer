@@ -24,6 +24,7 @@ public class GroundState : ParentState
             machine.Set(attackState);
         else if (character.HealRequested && healState != null && healState.CanHeal)
             machine.Set(healState);
+        // Warning: comparacion de float con ==. Usa Mathf.Approximately(moveDirection.x, 0f) o un umbral minimo.
         else if (moveDirection.x == 0)
             machine.Set(idleState);
         else

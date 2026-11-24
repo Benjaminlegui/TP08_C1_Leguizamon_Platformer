@@ -9,6 +9,7 @@ public abstract class Context : MonoBehaviour
     protected Rigidbody2D body => character.Body;
     protected bool isGrounded => character.IsGrounded;
 
+    // Suggestion: properties en camelCase (machine, y en State isComplete y time). El estandar de C# y el resto del proyecto usan PascalCase (Body, Health, IsGrounded).
     public StateMachine machine { get; private set; }
 
     

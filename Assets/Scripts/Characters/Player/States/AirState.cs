@@ -74,6 +74,7 @@ public class AirState : State
 
     private void UpdateJumpToFall()
     {
+        // Suggestion: la variable local info no se usa. Borrala.
         AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
 
         if (IsFinished(jumpToFallClip))

@@ -50,6 +50,8 @@ public class Player : Context
         deathState.Finished += OnDeathFinished;
     }
 
+    // Bug: Update sigue corriendo con Time.timeScale = 0, asi que con el menu de pausa abierto Q, E y A/D igual entran a AttackState/HealState y rotan al jugador.
+    // El sonido de ataque suena en pausa y el estado queda trabado hasta despausar. Ignora el input (o desactiva el PlayerInput) mientras el juego esta pausado.
     private void Update()
     {
         if (machine.state.CanMove)

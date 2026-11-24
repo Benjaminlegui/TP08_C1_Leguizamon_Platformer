@@ -1,3 +1,4 @@
+// Suggestion: using System no se usa en este archivo. Borralo.
 using System;
 using UnityEngine;
 

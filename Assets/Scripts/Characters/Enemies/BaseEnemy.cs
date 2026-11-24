@@ -65,6 +65,8 @@ public class BaseEnemy : Context
         Player player = collision.collider.GetComponentInParent<Player>();
 
         if (player != null)
+            // Warning: GetComponent<Health>() se ejecuta en cada paso de fisica mientras dure el contacto.
+            // Character ya expone Health: usa player.Character.Health o cachea la referencia.
             player.GetComponent<Health>().TakeDamage(character.ContactDamage);
     }
 

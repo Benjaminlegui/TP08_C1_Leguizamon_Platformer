@@ -10,6 +10,8 @@ public abstract class UIMenuButton : MonoBehaviour, IPointerEnterHandler
 
     protected virtual AudioManager.UISound ClickSound => AudioManager.UISound.Click;
 
+    // Warning: FindAnyObjectByType se ejecuta una vez por cada boton de la escena (y lo mismo hace UIPanel.Awake).
+    // Inyecta el AudioManager por inspector o exponelo con una referencia unica en vez de buscarlo en runtime.
     private void Awake() => audioManager = FindAnyObjectByType<AudioManager>();
 
     private void OnEnable()
